@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Raptor-Event</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Nunito:600,700" rel="stylesheet"> 
+        
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+        <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Nav Bar Start -->
+        <div class="navbar navbar-expand-lg bg-light navbar-light">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand">Raptor <span>Event</span></a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="booking.html" class="nav-item nav-link">Booking</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Nav Bar End -->
+
+
+        <!-- Carousel Start -->
+        <div class="carousel">
+            <div class="container-fluid">
+                <div class="owl-carousel">
+                    <div class="carousel-item">
+                        <div class="carousel-img">
+                            <img src="img/raptor%20background.png" alt="Image">
+                        </div>
+                        <div class="carousel-text">
+                            <h1>Raptor <span>Gaming</span> Event</h1>
+                            <p>
+                                This app is built for hackathon event for Bit project in Devpost site
+                            </p>
+                            <div class="carousel-btn">
+                                <a class="btn custom-btn" href="https://serverless-hacks.devpost.com/?ref_content=featured&ref_feature=challenge&ref_medium=portfolio">View Event</a>
+                                <a class="btn custom-btn" href="booking.html">Book Ticket</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel End -->
+        
+        <!-- About Start -->
+        <div class="about">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="about-img">
+                            <img src="img/RAPTOR%20(2).png" alt="Image">
+                            <button type="button" class="btn-play" data-toggle="modal" data-src="https://www.youtube.com/embed/za86h3jWu-E" data-target="#videoModal">
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-content">
+                            <div class="section-header">
+                                <p>About Project</p>
+                               
+                            </div>
+                          <div class="about-text">
+                                <p>
+                                    Event booking application is built using azure services, front end UI is built using html,css and backend data stored in cosmodb.
+                                </p>
+                                <div class="section-header">                           
+<p>Azure function:-</p>
+                                </div>
+<li>Httptrigger:- which used to save event data in cosmodb.</li>
+                             <p><li>Timetrigger:- which send mail communication to Event admin about user in a timely manner.</li></p>
+
+<li>Azure cosmodb(Backend source):-User Data stored in cosmodb.</li>
+
+  <p><li>Sendgrid twilio:-Mail communication sent to Event admin in a timely manner by Azure function time trigger.</li></p>
+
+<li>Github:-Application hosted in github.</li>
+                           <div class="carousel-btn">
+                               
+                               <a class="btn custom-btn" href="https://drive.google.com/drive/folders/1--AeenguzpUb3qVRcZczHWneqcaZfCQf?usp=sharing">download apk </a>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+        
+        
+        <!-- Video Modal Start-->
+        <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>        
+                        <!-- 16:9 aspect ratio -->
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <!-- Video Modal End --> 
+        
+        <!-- Booking Start -->
+        <div class="booking">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-7">
+                        <div class="booking-content">
+                            <div class="section-header">
+                                <h2>Raptor Event </h2>
+                                <p>Its time for high tech event, join and explore more </p>
+                            </div>
+                            <div class="about-text">
+                                <p>
+                                    Event booking application is built using azure services, front end UI is built using html,css and backend data stored in cosmodb.
+                                </p>
+                                <div class="section-header">                           
+<p>Azure function:-</p>
+                                </div>
+<li>Httptrigger:- which used to save event data in cosmodb.</li>
+                             <p><li>Timetrigger:- which send mail communication to Event admin about user in a timely manner.</li></p>
+
+<li>Azure cosmodb(Backend source):-User Data stored in cosmodb.</li>
+
+  <p><li>Sendgrid twilio:-Mail communication sent to Event admin in a timely manner by Azure function time trigger.</li></p>
+
+<li>Github:-Application hosted in github.</li>
+                           
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="booking-form">
+                           <form method="post" action="https://raptorserverlessfn.azurewebsites.net/api/HttpTrigger1?clientId=default">
+  <div class="form-wrapper">
+    <label for="firstName">First name</label>
+    <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter first name" required="required" />
+    
+  </div>
+
+  <div class="form-wrapper">
+    <label for="lastName">Last name</label>
+    <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter last name" required="required" />
+  </div>
+<div class="form-wrapper">
+    <label for="gender">gender</label>
+    <input type="Num" class="form-control" id="gender" name="gender" placeholder="male/female"  />
+  </div>
+  <div class="form-wrapper">
+    <label for="email">Email</label>
+    <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" required="required" />
+  </div>
+  <div class="form-wrapper">
+    <label for="num">Ph Num</label>
+    <input type="num" class="form-control" id="num" name="num" placeholder="Enter No"  />
+  </div>
+  
+<div class="form-wrapper">
+    <label for="code">Reg Code</label>
+    <input type="code" class="form-control" id="code" name="code" placeholder="Enter code"  />
+  </div>
+<div class="form-wrapper">
+    <label for="comment">Comment</label>
+    <input type="comment" class="form-control" style="height: 69px" id="comment" name="comment" placeholder="comments"  />
+    
+  </div>
+  <button type="submit" class="btn btn-primary btn-block">Submit</button>
+
+				
+				
+                </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Booking End -->
+<!-- Footer Start -->
+        
+            <div class="copyright">
+                <div class="container">
+                    <p>Thanks  <a href="#"> Team-Raptor</a></p>
+                </div>
+            </div>
+        
+        <!-- Footer End -->
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/tempusdominus/js/moment.min.js"></script>
+        <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+        <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+        
+        <!-- Contact Javascript File -->
+        <script src="mail/jqBootstrapValidation.min.js"></script>
+        <script src="mail/contact.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+</html>

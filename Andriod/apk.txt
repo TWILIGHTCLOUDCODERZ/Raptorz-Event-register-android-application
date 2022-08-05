@@ -1,0 +1,119 @@
+
+com.example.raptorevent;
+
+
+Manifest.xml
+
+ 
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.raptorevent;">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/mylogo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/mylogo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.linuxsyr">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
+
+ 
+
+ 
+
+ 
+
+_____________________________
+
+activity_main.java
+
+ 
+
+package com.example.raptorevent;;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.graphics.Bitmap;
+import android.os.Bundle;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
+
+public class MainActivity extends AppCompatActivity {
+    private WebView mywebView;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        mywebView=(WebView) findViewById(R.id.webview);
+        mywebView.setWebViewClient(new WebViewClient());
+        mywebView.loadUrl("https://raptortcc.github.io/");
+        WebSettings webSettings=mywebView.getSettings();
+        webSettings.setJavaScriptEnabled(true);
+    }
+    public class mywebClient extends WebViewClient{
+        @Override
+        public void onPageStarted(WebView view, String url, Bitmap favicon){
+            super.onPageStarted(view,url,favicon);
+        }
+        @Override
+        public boolean shouldOverrideUrlLoading(WebView view,String url){
+            view.loadUrl(url);
+            return true;
+        }
+    }
+    @Override
+    public void onBackPressed(){
+        if(mywebView.canGoBack()) {
+            mywebView.goBack();
+        }
+        else{
+            super.onBackPressed();
+        }
+    }
+}
+
+ 
+
+ 
+
+ 
+
+___________________________________
+
+ 
+
+Activity_main.xml
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>
