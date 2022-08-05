@@ -6,7 +6,7 @@
 
 ## What it does
 
-&emsp;&emsp;Raptorz Event register android application helps user/customer to fill form with their relevant data which is stored in cosmodb via azure function post service feature and time trigger configured which lets event manger about event registration details in timely manner via sendgrid gateway.
+&emsp;&emsp;Raptorz Event register android application - helps user/customer to fill form with their relevant data which is stored in cosmodb via azure function post service feature and time trigger configured which lets event manger about event registration details in timely manner via sendgrid gateway.
 
 ###More in detail about application,
 
